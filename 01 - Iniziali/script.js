@@ -27,25 +27,28 @@ return letterNames[]
 
 // Dichiara la funzione qui.
 
-//function startLetternames(names) {
+function firstLetter(arrayNames) {
 
   let letterNames = [];
+  
+  for (let i = 0; i < arrayNames.length; i++) {
 
-  for (let i = 0; i < names.lenght; i++) {
-     let letter = names[i]
+    //console.log(i,arrayNames[i])
+    const name = arrayNames[i]
 
-    console.log(letter)
+    //console.log(name[0])
+   letterNames.push(name[0])
+
   }
-
    //showLetters = console.log(letterNames)
- 
-   //return letterNames
+   return letterNames
 
-//}
-
-
+}
 // Invoca la funzione qui e stampa il risultato in console
 
-// startLetternames(names)
+const result = firstLetter(names)
+console.log(result)
+
+
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
